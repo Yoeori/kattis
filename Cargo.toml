@@ -1,0 +1,8 @@
+[package]
+name = "inf237-problems"
+version = "0.1.0"
+authors = ["Yoeri Otten <yoeri.otten@student.uib.no>"]
+edition = "2018"
+
+[dependencies]
+# Dependencies cannot be defined.
