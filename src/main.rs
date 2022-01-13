@@ -1,3 +1,4 @@
+mod tarifa;
 mod twosum;
 
 #[allow(unused_variables, unused_mut)]
