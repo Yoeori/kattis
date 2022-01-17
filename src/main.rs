@@ -1,3 +1,4 @@
+mod burrowswheeler;
 
 #[allow(unused_variables, unused_mut)]
 mod default;
