@@ -1,1 +1,32 @@
-rustc -O --crate-type bin --edition=2018 src/$1.rs -o target/$1; cat input/$1.in | ./target/$1
+#!/usr/bin/env bash
+# Kattis helper bash script to setup project for a problem
+set -e
+
+run () {
+    rustc -O --crate-type bin --edition=2018 src/$problem.rs -o target/$problem;
+    ./target/$problem;
+}
+
+download () {
+    wget "https://open.kattis.com/problems/$problem/file/statement/samples.zip" -O /tmp/kattis.zip;
+    mkdir input/$problem;
+    unzip /tmp/kattis.zip -d input/$problem;
+    rm /tmp/kattis.zip;
+    cp src/default.rs src/$problem.rs;
+    sed -i "s/default/$problem/" src/$problem.rs;
+    echo -e "mod $problem;\n$(cat src/main.rs)" > src/main.rs
+}
+
+problem=$2
+
+case "$1" in
+    run|r)
+        run
+        ;;
+    download|d)
+        download
+        ;;
+    *)
+        echo "Invalid command given. Valid commands: (r)un [problem], (d)ownload [problem]"
+        ;;
+esac
