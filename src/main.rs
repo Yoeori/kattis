@@ -1,3 +1,4 @@
+mod typo;
 mod burrowswheeler;
 
 #[allow(unused_variables, unused_mut)]
