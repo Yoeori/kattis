@@ -1,3 +1,4 @@
+mod hoppers;
 mod faultyrobot;
 mod evenup;
 mod earlywinter;
