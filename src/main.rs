@@ -1,3 +1,4 @@
+mod faultyrobot;
 mod evenup;
 mod earlywinter;
 mod greetings2;
