@@ -1,3 +1,4 @@
+mod grapevine;
 mod hoppers;
 mod faultyrobot;
 mod evenup;
