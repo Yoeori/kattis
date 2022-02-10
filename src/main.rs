@@ -1,3 +1,4 @@
+mod kayaking;
 mod onewayroads;
 mod firefly;
 mod tiredterry;
