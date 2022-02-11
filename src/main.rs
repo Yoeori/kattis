@@ -1,3 +1,4 @@
+mod islandhopping;
 mod kayaking;
 mod onewayroads;
 mod firefly;
