@@ -1,3 +1,4 @@
+mod bumped;
 mod islandhopping;
 mod kayaking;
 mod onewayroads;
