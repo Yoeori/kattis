@@ -1,3 +1,4 @@
+mod detour;
 mod bumped;
 mod islandhopping;
 mod kayaking;
