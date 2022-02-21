@@ -1,3 +1,4 @@
+mod uib_pointsofsnow;
 mod ticketpricing;
 mod orders;
 mod detour;
