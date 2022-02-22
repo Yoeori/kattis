@@ -1,3 +1,4 @@
+mod megainversions;
 mod uib_pointsofsnow;
 mod ticketpricing;
 mod orders;
