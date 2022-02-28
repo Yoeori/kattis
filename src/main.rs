@@ -1,3 +1,4 @@
+mod armcoordination;
 mod megainversions;
 mod uib_pointsofsnow;
 mod ticketpricing;
