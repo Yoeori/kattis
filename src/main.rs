@@ -1,3 +1,4 @@
+mod deceleratingjump;
 mod gluttonousgoop;
 mod fairplay;
 mod armcoordination;
