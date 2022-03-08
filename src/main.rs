@@ -1,3 +1,4 @@
+mod imperfectgps;
 mod implementationirregularities;
 mod deceleratingjump;
 mod gluttonousgoop;
