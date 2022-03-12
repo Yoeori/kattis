@@ -1,3 +1,4 @@
+mod rafting;
 mod imperfectgps;
 mod implementationirregularities;
 mod deceleratingjump;
