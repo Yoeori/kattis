@@ -1,3 +1,4 @@
+mod mosquitoes;
 mod rafting;
 mod imperfectgps;
 mod implementationirregularities;
