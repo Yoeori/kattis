@@ -24,6 +24,9 @@ mod greetings2;
 mod tarifa;
 mod twosum;
 
+#[allow(dead_code)]
+pub(crate) mod snippets;
+
 #[allow(unused_variables, unused_mut)]
 mod default;
 
