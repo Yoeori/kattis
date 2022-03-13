@@ -1,3 +1,4 @@
+mod moviecollection;
 mod cleaningpipes;
 mod mosquitoes;
 mod rafting;
