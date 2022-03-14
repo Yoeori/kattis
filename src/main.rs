@@ -1,3 +1,4 @@
+mod financialplanning;
 mod emptyingbaltic;
 mod cardboardcontainer;
 mod moviecollection;
