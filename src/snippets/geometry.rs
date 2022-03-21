@@ -140,37 +140,37 @@ impl Line<f64> {
 }
 
 #[derive(Debug, PartialEq, Eq)]
-pub struct LineSegment<'a, 'b, T>(pub &'a Point<T>, pub &'b Point<T>);
+pub struct LineSegment<T>(pub Point<T>, pub Point<T>);
 
-impl LineSegment<'_, '_, f64> {
+impl LineSegment<f64> {
     pub fn proper_intersect(&self, other: &LineSegment<f64>) -> Option<Point<f64>> {
-        let oa = Point::orient(other.0, other.1, self.0);
-        let ob = Point::orient(other.0, other.1, self.1);
-        let oc = Point::orient(self.0, self.1, other.0);
-        let od = Point::orient(self.0, self.1, other.1);
+        let oa = Point::orient(&other.0, &other.1, &self.0);
+        let ob = Point::orient(&other.0, &other.1, &self.1);
+        let oc = Point::orient(&self.0, &self.1, &other.0);
+        let od = Point::orient(&self.0, &self.1, &other.1);
 
         if oa * ob < 0.0 && oc * od < 0.0 {
-            Some(&(&(self.0 * ob) - &(self.1 * oa)) / (ob - oa))
+            Some(&(&(&self.0 * ob) - &(&self.1 * oa)) / (ob - oa))
         } else {
             None
         }
     }
 
     pub fn distance_to_point(&self, other: &Point<f64>) -> f64 {
-        if self.0 != other {
-            let line = Line::from_points(self.0, self.1);
-            if line.cmp_proj(self.0, other) && line.cmp_proj(other, self.1) {
+        if &self.0 != other {
+            let line = Line::from_points(&self.0, &self.1);
+            if line.cmp_proj(&self.0, other) && line.cmp_proj(other, &self.1) {
                 return line.dist(other);
             }
         }
-        f64::min((other - self.0).abs(), (other - self.1).abs())
+        f64::min((other - &self.0).abs(), (other - &self.1).abs())
     }
 
     pub fn distance_to_segment(&self, other: &LineSegment<f64>) -> f64 {
         if self.proper_intersect(other).is_some() {
             0.0
         } else {
-            f64::min(self.distance_to_point(other.0), f64::min(self.distance_to_point(other.1), f64::min(other.distance_to_point(self.0), other.distance_to_point(self.1))))
+            f64::min(self.distance_to_point(&other.0), f64::min(self.distance_to_point(&other.1), f64::min(other.distance_to_point(&self.0), other.distance_to_point(&self.1))))
         }
     }
 }
@@ -183,17 +183,5 @@ pub struct Circle<'a, T> {
 impl<> Circle<'_, f64> {
     pub fn in_circle(&self, p: &Point<f64>) -> bool {
         (p - self.center).abs() < self.radius
-    }
-}
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    #[test]
-    fn segment_distance() {
-        let s1 = LineSegment(&Point { x: 0.0 , y: 0.0 }, &Point { x: 1.0 , y: 1.0 });
-        let s2 = LineSegment(&Point { x: 0.0 , y: 1.0 }, &Point { x: 1.0 , y: 0.0 });
-        assert_eq!(s1.proper_intersect(&s2).unwrap(), Point { x: 0.5, y: 0.5 });
     }
 }
