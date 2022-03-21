@@ -1,3 +1,4 @@
+mod nekameleoni;
 mod financialplanning;
 mod emptyingbaltic;
 mod cardboardcontainer;
