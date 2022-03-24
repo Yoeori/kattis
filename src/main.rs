@@ -1,3 +1,4 @@
+mod mapcolouring;
 mod socialadvertising;
 mod nekameleoni;
 mod financialplanning;
