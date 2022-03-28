@@ -1,3 +1,4 @@
+mod citrusintern;
 mod mapcolouring;
 mod socialadvertising;
 mod nekameleoni;
