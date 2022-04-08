@@ -1,3 +1,4 @@
+mod allergy;
 mod rubiksrevenge;
 mod holeynqueensbatman;
 mod pokemongogo;
