@@ -1,3 +1,4 @@
+mod pianolessons;
 mod paintball;
 mod allergy;
 mod rubiksrevenge;
