@@ -1,3 +1,4 @@
+mod paintball;
 mod allergy;
 mod rubiksrevenge;
 mod holeynqueensbatman;
