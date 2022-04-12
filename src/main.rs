@@ -1,3 +1,4 @@
+mod water;
 mod pianolessons;
 mod paintball;
 mod allergy;
