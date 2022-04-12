@@ -1,3 +1,4 @@
+mod dartscoring;
 mod water;
 mod pianolessons;
 mod paintball;
