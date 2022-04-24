@@ -1,3 +1,4 @@
+mod bing;
 mod findinglines;
 mod roberthood;
 mod dartscoring;
