@@ -1,3 +1,4 @@
+mod clockpictures;
 mod bing;
 mod findinglines;
 mod roberthood;
