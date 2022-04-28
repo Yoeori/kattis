@@ -1,3 +1,4 @@
+mod closestpair2;
 mod clockpictures;
 mod bing;
 mod findinglines;
