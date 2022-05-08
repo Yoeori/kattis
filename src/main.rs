@@ -1,3 +1,4 @@
+mod hnumbers;
 mod closestpair2;
 mod clockpictures;
 mod bing;
