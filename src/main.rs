@@ -1,3 +1,4 @@
+mod inversefactorial;
 mod nine;
 mod hnumbers;
 mod closestpair2;
