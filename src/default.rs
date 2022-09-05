@@ -32,7 +32,8 @@ mod tests {
             assert_eq!(
                 std::str::from_utf8(&output_writer).unwrap().trim(),
                 std::fs::read_to_string(&file).unwrap().trim(),
-                "file: {:?}", &file
+                "file: {:?}",
+                file
             );
         }
     }
