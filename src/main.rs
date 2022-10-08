@@ -1,3 +1,4 @@
+mod highesthill;
 mod discdistrict;
 mod coffeecupcombo;
 mod acearbiter;
