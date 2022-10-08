@@ -1,3 +1,4 @@
+mod acearbiter;
 mod robotsonagrid;
 mod timebomb;
 mod knigsoftheforest;
