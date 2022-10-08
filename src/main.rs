@@ -1,3 +1,4 @@
+mod discdistrict;
 mod coffeecupcombo;
 mod acearbiter;
 mod robotsonagrid;
