@@ -1,3 +1,5 @@
+mod robotsonagrid;
+mod timebomb;
 mod knigsoftheforest;
 mod deathknight;
 mod typo;
