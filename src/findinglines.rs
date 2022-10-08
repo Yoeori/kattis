@@ -56,7 +56,7 @@ fn solve(input: impl BufRead, mut w: impl Write) -> Result<(), Box<dyn Error>> {
     let expect = if (n * p) % 100 != 0 {
         ((n * p) / 100) + 1
     } else {
-        ((n * p) / 100)
+        (n * p) / 100
     };
 
     // Base cases
