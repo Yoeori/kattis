@@ -1,3 +1,4 @@
+mod deathknight;
 mod typo;
 mod burrowswheeler;
 mod inversefactorial;
