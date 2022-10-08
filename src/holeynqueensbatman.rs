@@ -25,7 +25,7 @@ fn solve(input: impl BufRead, mut w: impl Write) -> Result<(), Box<dyn Error>> {
         }
 
         if boards[n - 1].is_none() {
-            boards[n - 1] = Some(generate_boards(&mut EMPTY_BOARD, n as i8, 0));
+            boards[n - 1] = Some(generate_boards(&mut EMPTY_BOARD.clone(), n as i8, 0));
         }
 
         let holes: Vec<(usize, usize)> = (&mut lines).take(m).collect();
