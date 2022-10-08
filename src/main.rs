@@ -1,3 +1,4 @@
+mod coffeecupcombo;
 mod acearbiter;
 mod robotsonagrid;
 mod timebomb;
