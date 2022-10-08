@@ -1,3 +1,4 @@
+mod knigsoftheforest;
 mod deathknight;
 mod typo;
 mod burrowswheeler;
