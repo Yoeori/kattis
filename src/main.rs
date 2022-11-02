@@ -1,3 +1,4 @@
+mod ternarianweights;
 mod highesthill;
 mod discdistrict;
 mod coffeecupcombo;
