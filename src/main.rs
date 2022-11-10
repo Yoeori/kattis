@@ -1,3 +1,4 @@
+mod textmessaging;
 mod visualgo;
 mod bokforing;
 mod dunglish;
