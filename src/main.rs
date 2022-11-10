@@ -1,3 +1,4 @@
+mod bokforing;
 mod dunglish;
 mod pauleigon;
 mod ternarianweights;
