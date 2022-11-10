@@ -1,3 +1,4 @@
+mod visualgo;
 mod bokforing;
 mod dunglish;
 mod pauleigon;
