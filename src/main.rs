@@ -1,3 +1,4 @@
+mod primes2;
 mod findmyfamily;
 mod misa;
 mod textmessaging;
